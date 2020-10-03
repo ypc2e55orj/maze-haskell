@@ -1,0 +1,44 @@
+name:                maze-haskell
+version:             0.1.0.0
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Haskell Maze
+
+dependencies:
+- base >= 4.7 && < 5
+- random
+- mtl
+
+library:
+  source-dirs: src
+
+executables:
+  maze-haskell-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - maze-haskell
+
+tests:
+  maze-haskell-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - maze-haskell
