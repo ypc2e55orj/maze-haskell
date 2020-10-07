@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a2c878b7daa5430893a3fd1ef89a91110e446244ecb43e12eb15e1c5b69e48cf
+-- hash: a3250bcde69abb225ef9ffcc10a7c8f97ff3544b85ef0d507b085ad504ffed8e
 
 name:           maze-haskell
 version:        0.1.0.0
@@ -18,6 +18,7 @@ library
       AATree
       Maze.Board
       Maze.Generator
+      Maze.Solver
   other-modules:
       Paths_maze_haskell
   hs-source-dirs:

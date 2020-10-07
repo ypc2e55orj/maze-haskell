@@ -1,4 +1,5 @@
 {-# OPTIONS -Wall #-}
+
 module AATree
   ( AATree,
     toList,
